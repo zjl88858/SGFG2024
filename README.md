@@ -6,3 +6,4 @@ Thanks:
 https://github.com/yhuse/SunnyUI  
 https://github.com/getlantern/sysproxy  
 https://github.com/klzgrad/naiveproxy  
+https://github.com/go-gost/gost  
