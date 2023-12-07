@@ -2,7 +2,7 @@
 Unstable Public Proxy  
 Open-Source under SSPL  
 
-Require:
+Require:  
 DotNet 7.0.x  
 https://www.nuget.org/packages/SunnyUI/
   
