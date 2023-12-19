@@ -24,8 +24,9 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim TreeNode1 As TreeNode = New TreeNode("龟苓膏")
-        Dim TreeNode2 As TreeNode = New TreeNode("烧仙草")
+        Dim TreeNode1 As TreeNode = New TreeNode("龟苓膏(https)")
+        Dim TreeNode2 As TreeNode = New TreeNode("烧仙草(https)")
+        Dim TreeNode3 As TreeNode = New TreeNode("黑凉粉(quic)")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         UiLine1 = New Sunny.UI.UILine()
         UiStyleManager = New Sunny.UI.UIStyleManager(components)
@@ -51,7 +52,7 @@ Partial Class Main
         ' UiLine1
         ' 
         UiLine1.BackColor = Color.Transparent
-        UiLine1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiLine1.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiLine1.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiLine1.LineColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiLine1.LineColor2 = Color.FromArgb(CByte(238), CByte(248), CByte(248))
@@ -78,7 +79,7 @@ Partial Class Main
         UiSymbolButton1.FillHoverColor = Color.FromArgb(CByte(51), CByte(171), CByte(160))
         UiSymbolButton1.FillPressColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
         UiSymbolButton1.FillSelectedColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
-        UiSymbolButton1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiSymbolButton1.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiSymbolButton1.Location = New Point(258, 263)
         UiSymbolButton1.MinimumSize = New Size(1, 1)
         UiSymbolButton1.Name = "UiSymbolButton1"
@@ -91,7 +92,7 @@ Partial Class Main
         UiSymbolButton1.Symbol = 61956
         UiSymbolButton1.TabIndex = 3
         UiSymbolButton1.Text = "建立连接"
-        UiSymbolButton1.TipsFont = New Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        UiSymbolButton1.TipsFont = New Font("微软雅黑", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         ' 
         ' UiNavMenu1
         ' 
@@ -99,7 +100,7 @@ Partial Class Main
         UiNavMenu1.BorderStyle = BorderStyle.None
         UiNavMenu1.DrawMode = TreeViewDrawMode.OwnerDrawAll
         UiNavMenu1.FillColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        UiNavMenu1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiNavMenu1.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiNavMenu1.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiNavMenu1.FullRowSelect = True
         UiNavMenu1.HoverColor = Color.FromArgb(CByte(230), CByte(230), CByte(230))
@@ -108,10 +109,12 @@ Partial Class Main
         UiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom
         UiNavMenu1.Name = "UiNavMenu1"
         TreeNode1.Name = "s01"
-        TreeNode1.Text = "龟苓膏"
+        TreeNode1.Text = "龟苓膏(https)"
         TreeNode2.Name = "s02"
-        TreeNode2.Text = "烧仙草"
-        UiNavMenu1.Nodes.AddRange(New TreeNode() {TreeNode1, TreeNode2})
+        TreeNode2.Text = "烧仙草(https)"
+        TreeNode3.Name = "s03"
+        TreeNode3.Text = "黑凉粉(quic)"
+        UiNavMenu1.Nodes.AddRange(New TreeNode() {TreeNode1, TreeNode2, TreeNode3})
         UiNavMenu1.ScrollBarColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiNavMenu1.ScrollBarHoverColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiNavMenu1.ScrollBarPressColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
@@ -122,15 +125,15 @@ Partial Class Main
         UiNavMenu1.SelectedForeColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiNavMenu1.SelectedHighColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiNavMenu1.ShowLines = False
-        UiNavMenu1.Size = New Size(207, 103)
+        UiNavMenu1.Size = New Size(207, 150)
         UiNavMenu1.Style = Sunny.UI.UIStyle.Custom
         UiNavMenu1.TabIndex = 4
-        UiNavMenu1.TipsFont = New Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        UiNavMenu1.TipsFont = New Font("微软雅黑", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         ' 
         ' UiLine2
         ' 
         UiLine2.BackColor = Color.Transparent
-        UiLine2.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiLine2.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiLine2.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiLine2.LineColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiLine2.LineColor2 = Color.FromArgb(CByte(238), CByte(248), CByte(248))
@@ -149,7 +152,7 @@ Partial Class Main
         ' 
         UiCheckBox1.CheckBoxColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiCheckBox1.Checked = True
-        UiCheckBox1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiCheckBox1.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiCheckBox1.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiCheckBox1.Location = New Point(237, 88)
         UiCheckBox1.MinimumSize = New Size(1, 1)
@@ -163,7 +166,7 @@ Partial Class Main
         ' 
         UiCheckBox2.CheckBoxColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiCheckBox2.Checked = True
-        UiCheckBox2.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiCheckBox2.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiCheckBox2.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiCheckBox2.Location = New Point(237, 123)
         UiCheckBox2.MinimumSize = New Size(1, 1)
@@ -176,7 +179,7 @@ Partial Class Main
         ' UiCheckBox3
         ' 
         UiCheckBox3.CheckBoxColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
-        UiCheckBox3.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiCheckBox3.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiCheckBox3.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiCheckBox3.Location = New Point(237, 158)
         UiCheckBox3.MinimumSize = New Size(1, 1)
@@ -189,7 +192,7 @@ Partial Class Main
         ' UiLine3
         ' 
         UiLine3.BackColor = Color.Transparent
-        UiLine3.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiLine3.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiLine3.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiLine3.LineColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         UiLine3.LineColor2 = Color.FromArgb(CByte(238), CByte(248), CByte(248))
@@ -207,7 +210,7 @@ Partial Class Main
         ' UiCheckBox4
         ' 
         UiCheckBox4.CheckBoxColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
-        UiCheckBox4.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiCheckBox4.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiCheckBox4.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiCheckBox4.Location = New Point(461, 88)
         UiCheckBox4.MinimumSize = New Size(1, 1)
@@ -228,7 +231,7 @@ Partial Class Main
         UiTextBox1.ButtonStyleInherited = False
         UiTextBox1.FillColor2 = Color.FromArgb(CByte(238), CByte(248), CByte(248))
         UiTextBox1.FillColorGradient = True
-        UiTextBox1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiTextBox1.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiTextBox1.Location = New Point(461, 123)
         UiTextBox1.Margin = New Padding(4, 5, 4, 5)
         UiTextBox1.MinimumSize = New Size(1, 16)
@@ -256,10 +259,10 @@ Partial Class Main
         UiTextBox2.ButtonRectHoverColor = Color.FromArgb(CByte(51), CByte(171), CByte(160))
         UiTextBox2.ButtonRectPressColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
         UiTextBox2.ButtonStyleInherited = False
-        UiTextBox2.DoubleValue = 1080R
+        UiTextBox2.DoubleValue = 1080.0R
         UiTextBox2.FillColor2 = Color.FromArgb(CByte(238), CByte(248), CByte(248))
         UiTextBox2.FillColorGradient = True
-        UiTextBox2.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiTextBox2.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiTextBox2.IntValue = 1080
         UiTextBox2.Location = New Point(461, 158)
         UiTextBox2.Margin = New Padding(4, 5, 4, 5)
@@ -294,7 +297,7 @@ Partial Class Main
         UiButton1.FillHoverColor = Color.FromArgb(CByte(139), CByte(203), CByte(83))
         UiButton1.FillPressColor = Color.FromArgb(CByte(88), CByte(152), CByte(32))
         UiButton1.FillSelectedColor = Color.FromArgb(CByte(88), CByte(152), CByte(32))
-        UiButton1.Font = New Font("微软雅黑", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        UiButton1.Font = New Font("微软雅黑", 8.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiButton1.Location = New Point(579, 351)
         UiButton1.MinimumSize = New Size(1, 1)
         UiButton1.Name = "UiButton1"
@@ -306,7 +309,7 @@ Partial Class Main
         UiButton1.Style = Sunny.UI.UIStyle.Custom
         UiButton1.TabIndex = 15
         UiButton1.Text = "DebugView"
-        UiButton1.TipsFont = New Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        UiButton1.TipsFont = New Font("宋体", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         ' 
         ' BackgroundWorkerSysProxy
         ' 
@@ -316,7 +319,7 @@ Partial Class Main
         ' 
         ' UiLabel1
         ' 
-        UiLabel1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiLabel1.Font = New Font("微软雅黑", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
         UiLabel1.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiLabel1.Location = New Point(10, 356)
         UiLabel1.Name = "UiLabel1"
@@ -344,7 +347,7 @@ Partial Class Main
         Controls.Add(UiNavMenu1)
         Controls.Add(UiSymbolButton1)
         Controls.Add(UiLine1)
-        Font = New Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Font = New Font("微软雅黑", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         IsForbidAltF4 = True
         MaximizeBox = False
@@ -352,7 +355,7 @@ Partial Class Main
         Padding = New Padding(0, 50, 0, 0)
         RectColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         Style = Sunny.UI.UIStyle.Custom
-        Text = "神龟翻滚 2024 v7.0-Beta1"
+        Text = "神龟翻滚 2024 v7.0-Beta2"
         TitleColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         TitleFont = New Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point)
         TitleHeight = 50
