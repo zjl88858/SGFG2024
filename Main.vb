@@ -161,7 +161,13 @@ Public Class Main
                 Dim rep As PingReply = pingreq.Send("in.us.dwg.us.in", 500)
                 '如果返回0则是ping不通'
                 If rep.RoundtripTime = 0 Then
-                    Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)
+                    'Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)'
+                    Dim rep2 As PingReply = pingreq.Send("in.us.dwg.us.in", 500)
+                    If rep2.RoundtripTime = 0 Then
+                        Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)
+                    Else
+                        Sunny.UI.UIMessageTip.ShowOk("该节点似乎可用,延迟:" & rep2.RoundtripTime & "ms", 1000)
+                    End If
                 Else
                     Sunny.UI.UIMessageTip.ShowOk("该节点似乎可用,延迟:" & rep.RoundtripTime & "ms", 1000)
                 End If
@@ -178,7 +184,13 @@ Public Class Main
                 Dim rep As PingReply = pingreq.Send("ni.su.dwg.us.in", 500)
                 '如果返回0则是ping不通'
                 If rep.RoundtripTime = 0 Then
-                    Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)
+                    'Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)'
+                    Dim rep2 As PingReply = pingreq.Send("ni.su.dwg.us.in", 500)
+                    If rep2.RoundtripTime = 0 Then
+                        Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)
+                    Else
+                        Sunny.UI.UIMessageTip.ShowOk("该节点似乎可用,延迟:" & rep2.RoundtripTime & "ms", 1000)
+                    End If
                 Else
                     Sunny.UI.UIMessageTip.ShowOk("该节点似乎可用,延迟:" & rep.RoundtripTime & "ms", 1000)
                 End If
@@ -194,7 +206,13 @@ Public Class Main
                 Dim rep As PingReply = pingreq.Send("ns.iu.dwg.us.in", 500)
                 '如果返回0则是ping不通'
                 If rep.RoundtripTime = 0 Then
-                    Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)
+                    'Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)'
+                    Dim rep2 As PingReply = pingreq.Send("ns.iu.dwg.us.in", 500)
+                    If rep2.RoundtripTime = 0 Then
+                        Sunny.UI.UIMessageTip.ShowError("该节点似乎不可用", 1000)
+                    Else
+                        Sunny.UI.UIMessageTip.ShowOk("该节点似乎可用,延迟:" & rep2.RoundtripTime & "ms", 1000)
+                    End If
                 Else
                     Sunny.UI.UIMessageTip.ShowOk("该节点似乎可用,延迟:" & rep.RoundtripTime & "ms", 1000)
                 End If
