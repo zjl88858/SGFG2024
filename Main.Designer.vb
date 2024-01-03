@@ -24,9 +24,9 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim TreeNode1 As TreeNode = New TreeNode("龟苓膏(https)")
-        Dim TreeNode2 As TreeNode = New TreeNode("烧仙草(https)")
-        Dim TreeNode3 As TreeNode = New TreeNode("黑凉粉(quic)")
+        Dim TreeNode1 As TreeNode = New TreeNode("龟苓膏(亚太)")
+        Dim TreeNode2 As TreeNode = New TreeNode("烧仙草(欧盟)")
+        Dim TreeNode3 As TreeNode = New TreeNode("黑凉粉(北美)")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         UiLine1 = New Sunny.UI.UILine()
         UiStyleManager = New Sunny.UI.UIStyleManager(components)
@@ -47,6 +47,9 @@ Partial Class Main
         BackgroundWorkerSysProxy = New ComponentModel.BackgroundWorker()
         BackgroundWorkerSSRelay = New ComponentModel.BackgroundWorker()
         UiLabel1 = New Sunny.UI.UILabel()
+        UiLabel2 = New Sunny.UI.UILabel()
+        UiButton2 = New Sunny.UI.UIButton()
+        UiLinkLabel1 = New Sunny.UI.UILinkLabel()
         SuspendLayout()
         ' 
         ' UiLine1
@@ -109,11 +112,11 @@ Partial Class Main
         UiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom
         UiNavMenu1.Name = "UiNavMenu1"
         TreeNode1.Name = "s01"
-        TreeNode1.Text = "龟苓膏(https)"
+        TreeNode1.Text = "龟苓膏(亚太)"
         TreeNode2.Name = "s02"
-        TreeNode2.Text = "烧仙草(https)"
+        TreeNode2.Text = "烧仙草(欧盟)"
         TreeNode3.Name = "s03"
-        TreeNode3.Text = "黑凉粉(quic)"
+        TreeNode3.Text = "黑凉粉(北美)"
         UiNavMenu1.Nodes.AddRange(New TreeNode() {TreeNode1, TreeNode2, TreeNode3})
         UiNavMenu1.ScrollBarColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
         UiNavMenu1.ScrollBarHoverColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
@@ -292,23 +295,25 @@ Partial Class Main
         ' 
         ' UiButton1
         ' 
-        UiButton1.FillColor = Color.FromArgb(CByte(110), CByte(190), CByte(40))
-        UiButton1.FillColor2 = Color.FromArgb(CByte(110), CByte(190), CByte(40))
-        UiButton1.FillHoverColor = Color.FromArgb(CByte(139), CByte(203), CByte(83))
-        UiButton1.FillPressColor = Color.FromArgb(CByte(88), CByte(152), CByte(32))
-        UiButton1.FillSelectedColor = Color.FromArgb(CByte(88), CByte(152), CByte(32))
+        UiButton1.FillColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
+        UiButton1.FillColor2 = Color.FromArgb(CByte(0), CByte(150), CByte(136))
+        UiButton1.FillHoverColor = Color.FromArgb(CByte(51), CByte(171), CByte(160))
+        UiButton1.FillPressColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
+        UiButton1.FillSelectedColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
         UiButton1.Font = New Font("微软雅黑", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        UiButton1.LightColor = Color.FromArgb(CByte(238), CByte(248), CByte(248))
         UiButton1.Location = New Point(579, 351)
         UiButton1.MinimumSize = New Size(1, 1)
         UiButton1.Name = "UiButton1"
-        UiButton1.RectColor = Color.FromArgb(CByte(110), CByte(190), CByte(40))
-        UiButton1.RectHoverColor = Color.FromArgb(CByte(139), CByte(203), CByte(83))
-        UiButton1.RectPressColor = Color.FromArgb(CByte(88), CByte(152), CByte(32))
-        UiButton1.RectSelectedColor = Color.FromArgb(CByte(88), CByte(152), CByte(32))
+        UiButton1.RectColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
+        UiButton1.RectHoverColor = Color.FromArgb(CByte(51), CByte(171), CByte(160))
+        UiButton1.RectPressColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
+        UiButton1.RectSelectedColor = Color.FromArgb(CByte(0), CByte(120), CByte(109))
         UiButton1.Size = New Size(100, 35)
         UiButton1.Style = Sunny.UI.UIStyle.Custom
         UiButton1.TabIndex = 15
         UiButton1.Text = "DebugView"
+        UiButton1.TipsFont = New Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point)
         ' 
         ' BackgroundWorkerSysProxy
         ' 
@@ -327,12 +332,62 @@ Partial Class Main
         UiLabel1.Text = "BY:神龟 , MeowRabbit"
         UiLabel1.TextAlign = ContentAlignment.MiddleLeft
         ' 
+        ' UiLabel2
+        ' 
+        UiLabel2.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiLabel2.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
+        UiLabel2.Location = New Point(15, 245)
+        UiLabel2.Name = "UiLabel2"
+        UiLabel2.Size = New Size(106, 30)
+        UiLabel2.TabIndex = 17
+        UiLabel2.Text = "传输协议:https"
+        UiLabel2.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' UiButton2
+        ' 
+        UiButton2.FillColor = Color.FromArgb(CByte(140), CByte(140), CByte(140))
+        UiButton2.FillColor2 = Color.FromArgb(CByte(140), CByte(140), CByte(140))
+        UiButton2.FillHoverColor = Color.FromArgb(CByte(163), CByte(163), CByte(163))
+        UiButton2.FillPressColor = Color.FromArgb(CByte(112), CByte(112), CByte(112))
+        UiButton2.FillSelectedColor = Color.FromArgb(CByte(112), CByte(112), CByte(112))
+        UiButton2.Font = New Font("微软雅黑", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        UiButton2.LightColor = Color.FromArgb(CByte(248), CByte(248), CByte(248))
+        UiButton2.Location = New Point(127, 244)
+        UiButton2.MinimumSize = New Size(1, 1)
+        UiButton2.Name = "UiButton2"
+        UiButton2.RectColor = Color.FromArgb(CByte(140), CByte(140), CByte(140))
+        UiButton2.RectHoverColor = Color.FromArgb(CByte(163), CByte(163), CByte(163))
+        UiButton2.RectPressColor = Color.FromArgb(CByte(112), CByte(112), CByte(112))
+        UiButton2.RectSelectedColor = Color.FromArgb(CByte(112), CByte(112), CByte(112))
+        UiButton2.Size = New Size(95, 35)
+        UiButton2.Style = Sunny.UI.UIStyle.Custom
+        UiButton2.TabIndex = 18
+        UiButton2.Text = "切换为QUIC"
+        ' 
+        ' UiLinkLabel1
+        ' 
+        UiLinkLabel1.ActiveLinkColor = Color.FromArgb(CByte(0), CByte(190), CByte(172))
+        UiLinkLabel1.Font = New Font("微软雅黑", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        UiLinkLabel1.ForeColor = Color.FromArgb(CByte(48), CByte(48), CByte(48))
+        UiLinkLabel1.LinkBehavior = LinkBehavior.AlwaysUnderline
+        UiLinkLabel1.Location = New Point(162, 360)
+        UiLinkLabel1.Name = "UiLinkLabel1"
+        UiLinkLabel1.Size = New Size(100, 23)
+        UiLinkLabel1.Style = Sunny.UI.UIStyle.Custom
+        UiLinkLabel1.TabIndex = 19
+        UiLinkLabel1.TabStop = True
+        UiLinkLabel1.Text = "加入TG讨论组"
+        UiLinkLabel1.VisitedLinkColor = Color.FromArgb(CByte(230), CByte(80), CByte(80))
+        ' 
         ' Main
         ' 
         AutoScaleMode = AutoScaleMode.None
         BackColor = Color.FromArgb(CByte(238), CByte(248), CByte(248))
         ClientSize = New Size(688, 394)
         ControlBoxFillHoverColor = Color.FromArgb(CByte(51), CByte(171), CByte(160))
+        Controls.Add(UiLinkLabel1)
+        Controls.Add(UiButton2)
+        Controls.Add(UiLabel2)
         Controls.Add(UiLabel1)
         Controls.Add(UiButton1)
         Controls.Add(UiTextBox2)
@@ -354,7 +409,7 @@ Partial Class Main
         Padding = New Padding(0, 50, 0, 0)
         RectColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         Style = Sunny.UI.UIStyle.Custom
-        Text = "神龟翻滚 2024 v7.0-Beta3"
+        Text = "神龟翻滚 2024 v7.0.1"
         TitleColor = Color.FromArgb(CByte(0), CByte(150), CByte(136))
         TitleFont = New Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point)
         TitleHeight = 50
@@ -380,4 +435,7 @@ Partial Class Main
     Friend WithEvents BackgroundWorkerSysProxy As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorkerSSRelay As System.ComponentModel.BackgroundWorker
     Friend WithEvents UiLabel1 As Sunny.UI.UILabel
+    Friend WithEvents UiLabel2 As Sunny.UI.UILabel
+    Friend WithEvents UiButton2 As Sunny.UI.UIButton
+    Friend WithEvents UiLinkLabel1 As Sunny.UI.UILinkLabel
 End Class

@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SunnyUI" Version="3.6.2" />
+    <PackageReference Include="SunnyUI" Version="3.6.3" />
   </ItemGroup>
 
   <ItemGroup>
